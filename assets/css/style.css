@@ -469,8 +469,8 @@ footer {
         display: none;
     }
 
-    .habilidades {
-        width: 800px;
+    section>.habilidades {
+        padding: 0 5rem;
     }
 
 }
