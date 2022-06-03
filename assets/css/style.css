@@ -361,9 +361,8 @@ section>.habilidades {
     color: var(--backgroundPrimary);
 }
 
-.contacto span {
-    font-weight: bold;
-    color: gray;
+.contacto small {
+    color: rgb(112, 109, 109);
 }
 
 /*###########FOOTER##########*/
@@ -400,8 +399,63 @@ footer {
         justify-content: flex-end;
     }
 
+    header>section{
+        width: 100%;
+        margin-top: 2rem;
+    }    
+    section>.inf{    
+        width: 100%;    
+        margin-bottom: 2rem;
+        justify-content: none;
+    }
+ 
+    .textOne>h1{
+        font-size: 50px;
+    }
+
+    .textOne>span{
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .textOne>h2{
+        font-size: 30px;
+    }
+
+    .inf>.fotoPerfil>img{
+        width: 250px;
+        height: 250px;
+      
+    }
+
+    .textTwo>h1{
+        font-size: 40px;
+    }
+
+    .textTwo>span{
+        font-size:30px;
+    }
+
+    .inf .redes>img{
+        width: 35px;
+    }
+
+    section>.app{
+        width: 800px;
+        height: 100px;
+        align-items: center;
+        position: absolute;
+        top:3.4in;
+    }
+
+    .app>div{
+        width: 100%;
+        height: 100%;
+    }
+
     .acerca {
         max-width: 800px;
+        margin-top: 2rem;
     }
 
     #contenedorCarrusel {
@@ -432,7 +486,8 @@ footer {
     .portafolio #contenedorCarrusel{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 1rem;
+        justify-content: center;
         position: static;
         height: 100%;
     }
