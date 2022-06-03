@@ -5,156 +5,230 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="shortcut icon" href="./assets/images/suitcase.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" href="./asset/images/suitcase.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ef65001746.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-            <nav>
-                <img src="./assets/images/menu 1.svg" alt="menu">
-                <ul class="menu">
-                    <li>Home</li>
-                    <li>Servicios</li>
-                    <li>Acerca de mi</li>
-                    <li>Mis habilidades</li>
-                    <li>Mi portafolio</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
-        </header>
-        <body class="cuerpo">
-            <section>
-                <div class="inf">
-                    <div class="textoOne">
-                        <p class="one">Soy</p>
-                        <p class="two">Fernando</p>
-                        <p class="three">Licenciado en Computacion</p>
-                    </div>
-                    <div class="fotoPerfil">
-                        <div class="foto">
-
-                        </div>
-                    </div>
-                    <div class="textoTwo">
-                        <p class="one">
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <img src="./asset/images/menu.svg" alt="Menu Hamburguesa">
+            </label>
+            <ul>
+                <li>Home</li>
+                <li>Acerca de mi</li>
+                <li>Servicios</li>
+                <li>Mis habilidades</li>
+                <li>Mi portafolio</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="inf">
+                <div class="textOne">
+                    <h1>Soy</h1>
+                    <span>Fernando</span>
+                    <h2>Lienciado en <br>Computación</h2>
+                </div>
+                <div class="fotoPerfil">
+                    <img src="./asset/images/foto.png" alt="fotoPerfil">
+                </div>
+                <div class="otro">
+                    <div class="textTwo">
+                        <h1 class="one">
                             3 años
-                        </p>
-                        <p class="two">
+                        </h1>
+                        <span class="two">
                             experiencia
-                        </p>
-                        <div class="redes">
-                            <img src="./assets/images/cib_linkedin-in.svg" alt="linkedin">
-                            <img src="./assets/images/ant-design_instagram-filled.svg" alt="instagram">
-                            <img src="./assets/images/ant-design_twitter-outlined.svg" alt="twitter">
-                        </div>
+                        </span>
                     </div>
-                </div>               
-                    <div class="app">
+                    <div class="redes">
+                        <img src="./asset/images/cib_linkedin-in.svg" alt="linkedin">
+                        <img src="./asset/images/ant-design_instagram-filled.svg" alt="instagram">
+                        <img src="./asset/images/ant-design_twitter-outlined.svg" alt="twitter">
+                    </div>
+                </div>
+            </div>
+            <div class="app">
+                <div>
+                    <img src="./asset/images/akar-icons_google-fill.png" alt="google">
+                    <img src="./asset/images/ant-design_amazon-outlined.png" alt="amazon">
+                    <img src="./asset/images/bi_spotify.png" alt="spotify">
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="acerca">
+            <h2 class="textCenter">Acerca de mi</h2>
+            <p class="textCenter">Tengo 31 años de edad en el 2016 me gradue como Lic. en Computación egresado de la
+                prestigiosa Universidad del Zulia en Venezuela. <br> Actualmente me desenpeño como Technical Operations
+                Agent en Ecuador, a la par me encuentro realizando un Bootcamp en Academlo de Programación Web
+                Full-Stack
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="serv">
+            <h2 class="textCenter">Servicios</h2>
+            <div id="contenedorCarrusel">
+                <div class="itemsCarrusel">
+                    <div class="card textCenter" id="cardOne">
                         <div>
-                            <img src="./assets/images/akar-icons_google-fill.png" alt="google">
-                            <img src="./assets/images/ant-design_amazon-outlined.png" alt="amazon">
-                            <img src="./assets/images/bi_spotify.png" alt="spotify">
+                            <img class="imgOne" src="./asset/images/Ellipse 14.svg" alt="fondo">
+                            <img class="imgTwo" src="./asset/images/iconoir_design-pencil.svg" alt="pencil">
                         </div>
+                        <h4 class="textOne">UX/UI Desing</h4>
+                        <small class="textTwo">Desde diseño hasta implempentación del desarrollo</small>
                     </div>
-                <div class="acerca">
-                    <p class="textOne">Acerca de mi</p>
-                    <p class="textTwo">Tengo 31 años de edad en el 2016 me gradue como Lic. en Computación egresado de
-                        la
-                        prestigiosa Universidad del Zulia en Venezuela. <br> Actualmente me desenpeño como Technical
-                        Operations Agent en Ecuador, a la par me encuentro realizando un Bootcamp en Academlo de Programación
-                        Web Full-Stack</p>
-                </div>
-                <div class="servicios">
-                    <p class="textOne">Servicios</p>
-                    <div>
-                        <div class="servOne">
-                            <img class="imgOne" src="./assets/images/Ellipse 14.svg" alt="fondo">
-                            <img class="imgTwo" src="./assets/images/iconoir_design-pencil.svg" alt="pencil">
-                            <p class="textOne">UX/UI Desing</p>
-                            <p class="textTwo">Desde diseño hasta implempentación del desarrollo</p>
-                        </div>
-                        <div class="servTwo">
-                            <img class="imgOne" src="./assets/images/Ellipse 14.svg" alt="fondo">
-                            <img class="imgTwo" src="./assets/images/majesticons_speakerphone-line.svg" alt="pencil">
-                            <p class="textOne">Marketing</p>
-                            <p class="textTwo">Desde diseño hasta implempentación del desarrollo</p>
-                        </div>
-                        <div class="servThree">
-                            <img class="imgOne" src="./assets/images/Ellipse 14.svg" alt="fondo">
-                            <img class="imgTwo" src="./assets/images/feather_search.svg" alt="pencil">
-                            <p class="textOne">Research</p>
-                            <p class="textTwo">Desde diseño hasta implempentación del desarrollo</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="habilidades">
-                    <p class="textOne">Mis Habilidades</p>
-                    <div>
-                        <div class="habOne">
-                            <div class="text">
-                                <p>Marketing</p>
-                                <span>50%</span>
-                            </div>
-                            <div class="porcentaje">
-                                <div class="porc"></div>
-                            </div>
-                        </div>
-                        <div class="habTwo">
-                            <div class="text">
-                                <p>UI Desing</p>
-                                <span>50%</span>
-                            </div>
-                            <div class="porcentaje">
-                                <div class="porc"></div>
-                            </div>
-                        </div>
-                        <div class="habThree">
-                            <div class="text">
-                                <p>UX/Research</p>
-                                <span>50%</span>
-                            </div>
-                            <div class="porcentaje">
-                                <div class="porc"></div>
-                            </div>
-                        </div>
+                    <div class="flechas">
+                        <a href="#cardThree"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#cardTwo"><img src="./asset/images/right.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="portafolio">
-                    <p class="textOne">Mi portafolio</p>
-                    <div class="img">
-                        <img src="./assets/images/image 1.jpg" alt="imagen">
-                        <img src="./assets/images/image2.jpg" alt="imagen">
-                        <img src="./assets/images/image3.jpg" alt="imagen">
-                        <img src="./assets/images/image4.jpg" alt="imagen">
+                <div class="itemsCarrusel">
+                    <div class="card textCenter" id="cardTwo">
+                        <div>
+                            <img class="imgOne" src="./asset/images/Ellipse 14.svg" alt="fondo">
+                            <img class="imgTwo" src="./asset/images/majesticons_speakerphone-line.svg" alt="pencil">
+                        </div>
+                        <h4 class="textOne">Marketing</h4>
+                        <small class="textTwo">Desde diseño hasta implempentación del desarrollo</small>
+                    </div>
+                    <div class="flechas">
+                        <a href="#cardOne"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#cardThree"><img src="./asset/images/right.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="contacto">
-                    <p class="textOne">Contacto</p>
-                    <div class="img">
-                        <div class="phone">
-                            <img class="imgOne" src="./assets/images/Ellipse 14.svg" alt="fondo">
-                            <img class="imgTwo" src="./assets/images/phone 3.svg" alt="phone">
-                            <p class="textOne">Numero celular</p>
-                            <p class="textTwo">+593999734776</p>
+                <div class="itemsCarrusel">
+                    <div class="card textCenter" id="cardThree">
+                        <div>
+                            <img class="imgOne" src="./asset/images/Ellipse 14.svg" alt="fondo">
+                            <img class="imgTwo" src="./asset/images/feather_search.svg" alt="search">
                         </div>
-                        <div class="email">
-                            <img class="imgOne" src="./assets/images/Ellipse 14.svg" alt="fondo">
-                            <img class="imgTwo" src="./assets/images/mail 3.svg" alt="phone">
-                            <p class="textOne">Email</p>
-                            <p class="textTwo">fdlaurentis@gmail.com</p>
-                        </div>
+                        <h4 class="textOne">Research</h4>
+                        <small class="textTwo">Desde diseño hasta implempentación del desarrollo</small>
+                    </div>
+                    <div class="flechas">
+                        <a href="#cardTwo"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#cardOne"><img src="./asset/images/right.svg" alt=""></a>
                     </div>
                 </div>
-            </section>
-        </body>
-        <footer class="pie">
-            <span>Hecho en Academlo</span>
-        </footer>
-    </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="habilidades">
+            <h2 class="textCenter">Mis Habilidades</h2>
+            <div>
+                <div class="barra">
+                    <div class="text">
+                        <h4>Sql</h4>
+                        <span>80%</span>
+                    </div>
+                    <div class="porcentaje">
+                        <div class="porcSql"></div>
+                    </div>
+                </div>
+                <div class="barra">
+                    <div class="text">
+                        <h4>Javascript</h4>
+                        <span>50%</span>
+                    </div>
+                    <div class="porcentaje">
+                        <div class="porcJs"></div>
+                    </div>
+                </div>
+                <div class="barra">
+                    <div class="text">
+                        <h4>HTML</h4>
+                        <span>90%</span>
+                    </div>
+                    <div class="porcentaje">
+                        <div class="porcHtml"></div>
+                    </div>
+                </div>
+                <div class="barra">
+                    <div class="text">
+                        <h4>Css</h4>
+                        <span>75%</span>
+                    </div>
+                    <div class="porcentaje">
+                        <div class="porcCss"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="portafolio">
+            <h2 class="textCenter">Mi portafolio</h2>
+            <div id="contenedorCarrusel">
+                <div class="itemsCarrusel">
+                    <div class="work" id="workOne">
+                        <img src="./asset/images/image1.jpg" alt="Trabajo uno">
+                    </div>
+                    <div class="flechas">
+                        <a href="#workFour"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#workTwo"><img src="./asset/images/right.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="itemsCarrusel">
+                    <div class="work" id="workTwo">
+                        <img src="./asset/images/image2.jpg" alt="Trabajo dos">
+                    </div>
+                    <div class="flechas">
+                        <a href="#workOne"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#workThree"><img src="./asset/images/right.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="itemsCarrusel">
+                    <div class="work" id="workThree">
+                        <img src="./asset/images/image3.jpg" alt="Trabajo uno">
+                    </div>
+                    <div class="flechas">
+                        <a href="#workTwo"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#workFour"><img src="./asset/images/right.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="itemsCarrusel">
+                    <div class="work" id="workFour">
+                        <img class="imgOne" src="./asset/images/image4.jpg" alt="Trabajo uno">
+                    </div>
+                    <div class="flechas">
+                        <a href="#workThree"><img src="./asset/images/left.svg" alt=""></a>
+                        <a href="#workOne"><img src="./asset/images/right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contacto">
+            <h2 class="textCenter">Contacto</h2>
+            <div>
+                <div class="cardContacto">
+                    <img class="fondo" src="./asset/images/Ellipse 14.svg" alt="fondo">
+                    <img class="icono" src="./asset/images/phone 3.svg" alt="phone">
+                    <h4>Numero celular</h4>
+                    <small class="textTwo">+593999734776</small>
+                </div>
+                <div class="cardContacto">
+                    <img class="fondo" src="./asset/images/Ellipse 14.svg" alt="fondo">
+                    <img class="icono" src="./asset/images/mail 3.svg" alt="email">
+                    <h4 class="textOne">Email</h4>
+                    <small class="textTwo">fdlaurentis@gmail.com</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Hecho en Academlo</span>
+    </footer>
 </body>
 
 </html>

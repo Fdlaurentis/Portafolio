@@ -1,500 +1,373 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-:root{
+
+:root {
     --fontsPrimary: #34B0BE;
     --fontSecundary: #D2CECA;
     --backgroundPrimary: #242635;
+    --backgroundPrimaryTrans: #242635e5;
     --backgroundSecundary: #393949;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     background-color: var(--backgroundPrimary);
     color: var(--fontSecundary);
 }
 
-/*------------------FirstPhome---------------------*/
-
-/*------------FirstPhome-HEADER-Nav----------------*/
-header nav{
-    display: flex;
-    justify-content: end;
-    padding: 1rem 2rem;
+.textCenter {
+    text-align: center;
 }
 
-header nav ul{
-    display: none;
+/*##############HEADER##############*/
+header {
+    padding: 1rem;
 }
 
-/*------------FirstPhome-BODY-SECTION-INF----------------*/
-section .inf{
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    height: 60px;
+}
+
+nav>div>img {
+    width: 45px;
+}
+
+input#menu-hamburguesa {
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul {
+    list-style: none;
+    position: absolute;
     width: 100%;
-    justify-content: center;    
+    left: 0;
+    /* height: calc( 100vh - 60px ); */
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    display: none;
+    background-color: var(--backgroundPrimaryTrans);
+    z-index: 5;
 }
 
-section .inf .textoOne{
-    width: 115px;
-    position: relative;
-    left: 35px;
+input#menu-hamburguesa:checked~ul {
+    display: flex;
 }
 
-section .inf .textoOne .one{
-    font-size: 25px;
-}
-
-section .inf .textoOne .two{
-    font-size: 30px;
+nav>ul>li:hover {
     color: var(--fontsPrimary);
-    border-bottom: 1px solid var(--fontSecundary);
 }
 
-section .inf .textoOne .three{
-    font-size: 20px;
-}
-
-section .inf .fotoPerfil{
-    width: 150px;
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    z-index: -1;
+    align-items: center;
 }
 
-section .inf .fotoPerfil .foto{
+section>.inf {
+    display: flex;
+    justify-content: center;
+}
+
+.inf>.textOne {
+    position: relative;
+    z-index: 2;
+    left: 2rem;
+}
+
+.textOne>h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.textOne>span {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--fontsPrimary);
+    border-bottom: 3px solid var(--fontSecundary);
+
+}
+
+.textOne>h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fotoPerfil>img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-color: var(--backgroundSecundary);
-    background-image: url('../images/foto1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+}
+
+.inf>.otro {
     position: relative;
-    z-index: -1;
+    z-index: 2;
+    right: 1rem;
 }
 
-section .inf .textoTwo{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -35px;
-}
-
-section .inf .textoTwo .one{
-    color: var(--fontsPrimary);
-    font-size: 20px;    
-}
-
-section .inf .textoTwo .two{
-    color: var(--fontSecundary);
+.textTwo>h1 {
     font-size: 20px;
+    font-weight: bold;
+    color: var(--fontsPrimary);
 }
 
-section .inf .textoTwo img{
+.redes>img {
     background-color: var(--fontSecundary);
     width: 25px;
-    height: 25px;
     border-radius: 50%;
-    margin-right: 2px;
-    margin-top: 10px;
+    padding: 2px;
 }
 
-section .app div{
-    display: flex;
+section>.app {
     background-color: var(--backgroundSecundary);
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    flex-grow: 1;
+    border-radius: 1rem;
     position: relative;
-    margin: 0 10px;
+    bottom: 10px;
+    width: 370px;
 }
 
-section .app img{
-    width: 45px;
-    margin: 15px;
-    background-color: var(--fontSecundary);
-    border-radius: 15px;
-}
-
-/*------------FirstPhome-BODY-SECTION-ACERCA----------------*/
-
-section .acerca{
-    width: 100%;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section .acerca .textOne{
-    color: var(--fontsPrimary);
-    font-size: 32px;
-}
-
-section .acerca .textTwo{
-    padding: 5px 0;
-    font-size: 16px;
-    text-align: center;
-}
-
-/*------------FirstPhome-BODY-SECTION-SERVICIOS----------------*/
-
-section .servicios{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section .servicios .textOne{
-    color: var(--fontsPrimary);
-    font-size: 32px;
-    padding-bottom: 10px;
-}
-
-section .servicios div{
-    width: 100%;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1rem;
-} 
-
-section .servicios div .servOne{
-    width: 150px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-}
-
-section .servicios div .servOne .imgOne{
-    width: 150px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-section .servicios div .servOne .imgTwo{
-    width: 50px;
-    position:absolute;
-    top: 40px;
-}
-
-section .servicios div .servOne .textOne{
-    color: var(--backgroundPrimary);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-section .servicios div .servOne .textTwo{
-    font-size: 16px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-section .servicios div .servTwo{
-    width: 150px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-}
-
-section .servicios div .servTwo .imgOne{
-    width: 150px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-section .servicios div .servTwo .imgTwo{
-    width: 50px;
-    position:absolute;
-    top: 40px;
-}
-
-section .servicios div .servTwo .textOne{
-    color: var(--backgroundPrimary);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-section .servicios div .servTwo .textTwo{
-    font-size: 16px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-section .servicios div .servThree{
-    width: 150px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-}
-
-section .servicios div .servThree .imgOne{
-    width: 150px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-section .servicios div .servThree .imgTwo{
-    width: 50px;
-    position:absolute;
-    top: 40px;
-}
-
-section .servicios div .servThree .textOne{
-    color: var(--backgroundPrimary);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-section .servicios div .servThree .textTwo{
-    font-size: 16px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-/*------------FirstPhome-BODY-SECTION-HABILIDADES----------------*/
-
-section .habilidades{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-section .habilidades .textOne{
-    color: var(--fontsPrimary);
-    font-size: 32px;
-    padding-bottom: 10px;
-}
-
-section .habilidades div{
-    width: 95%;
-    display: flex;
-    flex-direction: column; 
-    gap: .50rem;
-}
-
-section .habilidades div .habOne .text{
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-section .habilidades div .habOne .text span{
-    color: var(--fontsPrimary);
-    font-size: 12px;
-}
-
-section .habilidades div .habOne .porcentaje{
-    width: 100%;
-    height: 15px;
-    background-color: var(--fontSecundary);
-    border-radius: 25px;
-}
-
-section .habilidades div .habOne div .porc{
-    width: 50%;
-    height: 15px;
-    background-color: var(--fontsPrimary);
-    border-radius: 25px;
-}
-
-section .habilidades div .habTwo .text{
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-section .habilidades div .habTwo .text span{
-    color: var(--fontsPrimary);
-    font-size: 12px;
-}
-
-section .habilidades div .habTwo .porcentaje{
-    width: 100%;
-    height: 15px;
-    background-color: var(--fontSecundary);
-    border-radius: 25px;
-}
-
-section .habilidades div .habTwo div .porc{
-    width: 50%;
-    height: 15px;
-    background-color: var(--fontsPrimary);
-    border-radius: 25px;
-}
-
-section .habilidades div .habThree .text{
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-section .habilidades div .habThree .text span{
-    color: var(--fontsPrimary);
-    font-size: 12px;
-}
-
-section .habilidades div .habThree .porcentaje{
-    width: 100%;
-    height: 15px;
-    background-color: var(--fontSecundary);
-    border-radius: 25px;
-}
-
-section .habilidades div .habThree div .porc{
-    width: 50%;
-    height: 15px;
-    background-color: var(--fontsPrimary);
-    border-radius: 25px;
-}
-
-/*------------FirstPhome-BODY-SECTION-PORTAFOLIO----------------*/
-
-section .portafolio{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-section .portafolio .textOne{
-    color: var(--fontsPrimary);
-    font-size: 32px;
-    padding-bottom: 10px;
-}
-
-section .portafolio .img{
-    display: flex;
-    gap: 1rem;
-}
-
-section .portafolio .img img{
-    width: 60px;
-}
-
-/*------------FirstPhome-BODY-SECTION-CONTACTO----------------*/
-
-section .contacto{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-section .contacto .textOne{
-    color: var(--fontsPrimary);
-    font-size: 32px;
-    padding-bottom: 10px;
-}
-
-section .contacto .img{
+.app>div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.app>div>img {
+    background-color: var(--fontSecundary);
+    width: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+/*###########SECTION ACERCA DE MI##########*/
+section>.acerca {
+    padding: 0 1rem;
+    margin-bottom: 20px;
+}
+
+.acerca>h2 {
+    color: var(--fontsPrimary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/*###########SECTION SERVICIOS##########*/
+section>.serv {
+    padding: 0 1rem;
+    margin-bottom: 20px;
+}
+
+.serv>h2 {
+    color: var(--fontsPrimary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#contenedorCarrusel {
+    overflow: hidden;
+    height: 250px;
+}
+
+.itemsCarrusel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.itemsCarrusel>.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.flechas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flechas>a {
+    width: 45px;
+    text-decoration: none;
+}
+
+.flechas>img {
+    width: 45px;
+}
+
+.card>div {
+    position: relative;
+}
+
+.card>div>.imgOne {
+    width: 250px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card>div>.imgTwo {
+    width: 95px;
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+}
+
+.card>h4 {
+    color: var(--backgroundPrimary);
+    padding: 1rem 0;
+}
+
+.card>small {
+    font-weight: bold;
+}
+
+/*###########SECTION HABILIDADES##########*/
+section>.habilidades {
+    padding: 0 2rem;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.habilidades>h2 {
+    color: var(--fontsPrimary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.habilidades>div>.barra>.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra>.porcentaje {
+    height: 20px;
+    width: 100%;
+    background-color: var(--fontSecundary);
+    border-radius: 1rem;
+    margin: 10px 0;
+}
+
+.porcentaje>.porcSql {
+    width: 80%;
+    height: 20px;
+    background-color: var(--fontsPrimary);
+    border-radius: 1rem;
+}
+
+.porcentaje>.porcJs {
+    width: 50%;
+    height: 20px;
+    background-color: var(--fontsPrimary);
+    border-radius: 1rem;
+}
+
+.porcentaje>.porcHtml {
+    width: 90%;
+    height: 20px;
+    background-color: var(--fontsPrimary);
+    border-radius: 1rem;
+}
+
+.porcentaje>.porcCss {
+    width: 75%;
+    height: 20px;
+    background-color: var(--fontsPrimary);
+    border-radius: 1rem;
+}
+
+/*###########SECTION PORTAFOLIO##########*/
+.portafolio {
+    padding: 0 2rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.portafolio>h2 {
+    color: var(--fontsPrimary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/*###########SECTION CONTACTO##########*/
+.contacto {
+    padding: 0 2rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contacto>h2 {
+    color: var(--fontsPrimary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contacto>div {
+    display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
-section .contacto .img .phone{
-    width: 130px;
+.contacto .cardContacto {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    width: 160px;
     position: relative;
 }
 
-section .contacto .img .phone .imgOne{
-    width: 100px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+.contacto>div>div>.fondo {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
 }
 
-section .contacto .img .phone .imgTwo{
-    width: 30px;
-    position:absolute;
-    top: 25px;
+.contacto>div>div>.icono {
+    position: absolute;
+    top: 2rem;
+    left: 3.3rem;
 }
 
-section .contacto .img .phone .textOne{
+.contacto h4 {
     color: var(--backgroundPrimary);
-    font-size: 14px;
 }
 
-section .contacto .img .phone .textTwo{
-    color: var(--fontSecundary);
-    font-size: 12px;
-    margin-bottom: 10px;
+.contacto span {
+    font-weight: bold;
+    color: gray;
 }
 
-section .contacto .img .email{
-    width: 130px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    position: relative;
-}
-
-section .contacto .img .email .imgOne{
-    width: 100px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-
-section .contacto .img .email .imgTwo{
-    width: 30px;
-    position:absolute;
-    top: 25px;
-}
-
-section .contacto .img .email .textOne{
-    color: var(--backgroundPrimary);
-    font-size: 14px;
-}
-
-section .contacto .img .email .textTwo{
-    color: var(--fontSecundary);
-    font-size: 12px;
-    margin-bottom: 8px;
-}
-
-/*------------FirstPhome-FOOTER----------------*/
-
-footer{
+/*###########FOOTER##########*/
+footer {
     background-color: var(--backgroundSecundary);
     color: var(--fontsPrimary);
     height: 45px;
@@ -506,90 +379,93 @@ footer{
     margin-top: 15px;
 }
 
-@media screen and (max-width: 300px){
-    section .inf{
+/*################MEDIAS QUERYS#####################*/
+/* section>.inf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+@media screen and (min-width:802px) {
+    nav>label {
+        display: none;
+    }
+
+    input#menu-hamburguesa~ul {
+        position: static;
+        background-color: transparent;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }    
-    
-    section .inf .fotoPerfil{
-        width: 120px;
-        position: static;
-    }
-    section .inf .fotoPerfil .foto{
-        width: 100px;        
-        height: 100px;
-        border-radius: 50%;
-        order: 0;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
     }
 
-    section .inf .textoOne{
-        order:1;
-        position: static;
+    .acerca {
+        max-width: 800px;
     }
 
-    section .inf .textoOne .one{
-        display: none;
-    }
-
-    section .inf .textoTwo{
-        order: 2;
-        width: 100%;
-        position: static;
-        margin-bottom: 15px;
-    }
-
-    section .inf .textoTwo .one{
-        display: none;
-    }
-
-    section .inf .textoTwo .two{
-        display: none;
-    }
-
-    section .inf .textoTwo .redes{
+    #contenedorCarrusel {
+        overflow: visible;
+        height: 250px;
         display: flex;
-        justify-content: space-evenly;
+        gap: 1rem;
     }
 
-    section .portafolio .img{
+    .serv .flechas {
+        display: none;
+    }
+
+    .habilidades {
+        width: 800px;
+    }
+
+}
+
+@media screen and (max-width:399px) {
+    .contacto>div {
         flex-direction: column;
         align-items: center;
     }
-
-    section .portafolio .img img{
-        width: 80%;
-    }
-
-    section .contacto .img{
-        flex-direction: column;
-    }
-
 }
 
-@media screen and (max-width:230px){    
-    section .app{
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width:500px) {
-    header nav ul{
+@media screen and (min-width:600px) {
+    .portafolio #contenedorCarrusel{
         display: flex;
-        list-style: none;
-        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: static;
+        height: 100%;
     }
-    header nav img{
+    .portafolio img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .portafolio .flechas {
         display: none;
     }
-    section .servicios div{
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-    }
-    section .habilidades div{
-        justify-content: center;
-        width: 60%;
-    }
 }
+
+/* @media screen and (max-width:370px) {
+    .inf .textoOne {
+        order: 2;
+        position: static;
+    }
+
+    .inf h1{
+        display: none;
+    }
+
+    .inf .fotoPerfil{
+        order:1;
+    }
+
+    .inf .textTwo{
+        order: 3;
+    }
+
+    .inf .textTwo{
+        display: none;
+    }
+
+} */
