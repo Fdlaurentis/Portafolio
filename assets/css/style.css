@@ -315,6 +315,7 @@ section>.habilidades {
 .work>img {
     width: 250px;
     height: 250px;
+    border-radius: 1rem;
 }
 
 .portafolio>h2 {
@@ -327,7 +328,7 @@ section>.habilidades {
 /*###########SECTION CONTACTO##########*/
 .contacto {
     padding: 0 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -340,7 +341,7 @@ section>.habilidades {
 
 .contacto>div {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -349,7 +350,8 @@ section>.habilidades {
     text-align: center;
     padding-bottom: 10px;
     border-radius: 1rem;
-    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
     position: relative;
 }
 
@@ -378,13 +380,13 @@ section>.habilidades {
 footer {
     background-color: var(--backgroundSecundary);
     color: var(--fontsPrimary);
-    height: 45px;
     font-size: 18px;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    padding: 1rem;
 }
 
 /*################MEDIAS QUERYS#####################*/
@@ -503,10 +505,53 @@ footer {
     }
 }
 
-@media screen and (max-width:399px) {
+@media screen and (max-width:350px) {
     .contacto>div {
         flex-direction: column;
         align-items: center;
+    }
+
+    .inf{
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.5in;
+    }
+
+    .inf .textOne>h1{
+        display: none;        
+    }
+
+    .inf >.textOne{
+        position: absolute;
+        left: 1.2in;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inf>.fotoPerfil{
+        position: absolute;
+        left: 0;
+    }
+
+    .inf>.otro>.textTwo{
+        display: none;
+    }
+
+    .inf>.otro>.redes{
+        position: absolute;
+        top: 1.1in;
+        display: flex;
+        gap: .5rem;
+    }
+
+    section>.app{
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    section>.app>div{
+  
+        justify-content: space-between;
     }
 }
 
