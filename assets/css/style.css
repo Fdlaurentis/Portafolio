@@ -65,7 +65,12 @@ input#menu-hamburguesa:checked~ul {
     display: flex;
 }
 
-nav>ul>li:hover {
+nav>ul>a{
+    text-decoration: none;
+    color: var(--fontSecundary);    
+}
+
+nav>ul>a:hover {
     color: var(--fontsPrimary);
 }
 
@@ -249,7 +254,7 @@ section>.serv {
 /*###########SECTION HABILIDADES##########*/
 section>.habilidades {
     padding: 0 2rem;
-    margin-bottom: 20px;
+    margin: 20px 0;
     width: 90%;
 }
 
@@ -305,7 +310,11 @@ section>.habilidades {
 .portafolio {
     padding: 0 2rem;
     margin-bottom: 20px;
-    width: 100%;
+}
+
+.work>img {
+    width: 250px;
+    height: 250px;
 }
 
 .portafolio>h2 {
@@ -399,56 +408,57 @@ footer {
         justify-content: flex-end;
     }
 
-    header>section{
+    header>section {
         width: 100%;
         margin-top: 2rem;
-    }    
-    section>.inf{    
-        width: 100%;    
+    }
+
+    section>.inf {
+        width: 100%;
         margin-bottom: 2rem;
         justify-content: none;
     }
- 
-    .textOne>h1{
+
+    .textOne>h1 {
         font-size: 50px;
     }
 
-    .textOne>span{
+    .textOne>span {
         font-weight: bold;
         font-size: 50px;
     }
 
-    .textOne>h2{
+    .textOne>h2 {
         font-size: 30px;
     }
 
-    .inf>.fotoPerfil>img{
+    .inf>.fotoPerfil>img {
         width: 250px;
         height: 250px;
-      
+
     }
 
-    .textTwo>h1{
+    .textTwo>h1 {
         font-size: 40px;
     }
 
-    .textTwo>span{
-        font-size:30px;
+    .textTwo>span {
+        font-size: 30px;
     }
 
-    .inf .redes>img{
+    .inf .redes>img {
         width: 35px;
     }
 
-    section>.app{
+    section>.app {
         width: 800px;
         height: 100px;
         align-items: center;
         position: absolute;
-        top:3.4in;
+        top: 3.4in;
     }
 
-    .app>div{
+    .app>div {
         width: 100%;
         height: 100%;
     }
@@ -458,32 +468,28 @@ footer {
         margin-top: 2rem;
     }
 
-    #contenedorCarrusel {
-        overflow: visible;
-        height: 250px;
-        display: flex;
-        gap: 1rem;
-    }
-
-    .serv .flechas {
-        display: none;
-    }
-
     section>.habilidades {
         padding: 0 5rem;
     }
 
 }
 
-@media screen and (max-width:399px) {
-    .contacto>div {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media screen and (min-width:600px) {
-    .portafolio #contenedorCarrusel{
+
+    #contenedorCarrusel {
+        overflow: visible;
+        height: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .serv .flechas {
+        display: none;
+    }
+
+    .portafolio #contenedorCarrusel {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -491,13 +497,16 @@ footer {
         position: static;
         height: 100%;
     }
-    .portafolio img {
-        width: 250px;
-        height: 250px;
-    }
 
     .portafolio .flechas {
         display: none;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .contacto>div {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
