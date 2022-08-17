@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+:root{
+  --colorPrimary:#fff;
+  --colorSecondary: #f2d43e;
+  --backgroundPrimary: #04076d;
+}
+
+
+body {
+  background-image: linear-gradient(135deg, #12043f, #04076d, #0c1399, #122aa5,
+      #3c2afc, #9587ff);
+  background-size: 500%;
+  animation: banimado 5s infinite;
+  overflow-y: scroll;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@keyframes banimado {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navBar{
+  background: var(--backgroundPrimary);
+  border-radius: .5rem;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  min-height: 50px;
+}
+
+i:hover{
+  color:var(--colorSecondary);
+  cursor:pointer;  
+}
+
+.datosPersonales{
+  display: flex;  
+  gap: 1rem;
+  align-items: center;
+  background: var(--backgroundPrimary);  
+  border-radius: 1rem;
+  padding: 1rem;
+  
+}
+
+.datosPersonales > h4{
+  color: var(--colorSecondary);  
+}
+
+
+.botones{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.fotoPerfil{
+  width: 100px;  
+  height: 100px;
+  border-radius: 50%;
+  background:rgba(255, 255, 255, 0.61);
+}
+
+.tipeo{
+  color: var(--colorSecondary);
+  position: relative;
+} 
+
+.tipeo::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  white-space: nowrap;
+  border-left: 4px solid;
+  overflow: hidden;
+  animation: typing 3s infinite alternate steps(13);  
+  overflow: hidden;
+  background: var(--backgroundPrimary);
+}
+
+@keyframes typing {
+  from{width: 100%;}
+  to{width: 0;}
+}
+
+
+.divBlock{
+  text-align: center;
+  margin: 1rem 0;
+  padding: .5rem;
+}
+
+.divBlock h4{
+  color: var(--colorSecondary);
+}
+
+.divBlock span{
+  font-size: 12px;
+  
+}
