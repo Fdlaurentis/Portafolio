@@ -1,5 +1,5 @@
 import './App.css'
-import { DatosPersonales, NavBar } from './componentes'
+import { DatosPersonales, NavBar} from './componentes'
 
 
 
@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App container my-2">      
       <NavBar />
-      <DatosPersonales />
-      
+      <DatosPersonales />     
     </div>
   )
 }

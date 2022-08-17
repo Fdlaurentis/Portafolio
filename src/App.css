@@ -50,6 +50,7 @@ body {
   display: flex;
   justify-content: space-around;
   min-height: 50px;
+  z-index: 5000;
 }
 
 i:hover{
@@ -112,8 +113,7 @@ i:hover{
 
 .divBlock{
   text-align: center;
-  margin: 1rem 0;
-  padding: .5rem;
+  margin-top: 1rem;
 }
 
 .divBlock h4{
@@ -123,4 +123,10 @@ i:hover{
 .divBlock span{
   font-size: 12px;
   
+}
+
+.divBlock img{
+  width: 100px;
+  height: 150px;
+  border-radius: .5rem;
 }
