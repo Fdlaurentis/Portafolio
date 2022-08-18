@@ -1,3 +1,5 @@
 export {default as NavBar} from './NavBar'
-export {default as DatosPersonales} from './DatosPersonales'
+export {default as Home} from './Home'
+export {default as Habilidades} from './Habilidades'
 export {default as Portafolio} from './Portafolio'
+export {default as Contactame} from './Contactame'

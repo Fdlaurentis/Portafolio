@@ -1,11 +1,12 @@
 import React from 'react';
-import pdf from '../pdf/CV-Desarrollador Junior.pdf'
 import fotoPerfil from '../images/foto.png'
+import pdf from '../pdf/CV-Desarrollador Junior.pdf'
 
-const DatosPersonales = () => {
+const Home = () => {
     return (
         <div>
             <header>
+
                 <div className='datosPersonales'>
                     <img src={fotoPerfil} className='fotoPerfil' />
                     <div>
@@ -20,12 +21,12 @@ const DatosPersonales = () => {
                 </div>
             </header>
 
-                <div className="divBlock">
-                    <h4>Sobre Mi</h4>
-                    <span>Tengo 31 años de edad en el 2016 me gradue como Lic. en Computación egresado de la prestigiosa Universidad del Zulia en Venezuela. Actualmente me desenpeño como Technical Operations Agent en Ecuador, a la par me encuentro realizando un Bootcamp en Academlo de Programación <br /> Web Full-Stack.</span>
-                </div>                
+            <div className="divBlock" id='portafolio'>
+                <h4>Sobre Mi</h4>
+                <span>Tengo 31 años de edad en el 2016 me gradue como Lic. en Computación egresado de la prestigiosa Universidad del Zulia en Venezuela. Actualmente me desenpeño como Technical Operations Agent en Ecuador, a la par me encuentro realizando un Bootcamp en Academlo de Programación Web Full-Stack.</span>
+            </div>
         </div>
     );
 };
 
-export default DatosPersonales;
+export default Home;

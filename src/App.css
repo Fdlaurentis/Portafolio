@@ -113,7 +113,7 @@ i:hover{
 
 .divBlock{
   text-align: center;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem;
 }
 
 .divBlock h4{
@@ -130,3 +130,16 @@ i:hover{
   height: 150px;
   border-radius: .5rem;
 }
+
+.haTec img{
+  width: 45px;
+  height: 45px;
+}
+
+.haTec{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: .5rem;
+}
+
