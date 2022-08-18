@@ -8,17 +8,10 @@ import react from '../images/structure.png'
 
 const Habilidades = () => {
     return (
-        <div>
+        <div className='container'>
             <div className="divBlock" id='herramientas'>
                 <h4>Habilidates Tecnicas</h4>
-                <div className="haTec">
-                    <img src={sql} />
-                    <img src={html} />
-                    <img src={css} />
-                    <img src={js} />
-                    <img src={react} />
-                    <img src={vB} />
-                </div>
+                
             </div>
         </div>
     );
