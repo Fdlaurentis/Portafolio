@@ -190,4 +190,35 @@ i:hover{
 .formulario{
   display: flex;
   flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  width: 300px;
+}
+
+.formulario input{
+  background: var(--backgroundPrimary);
+  color: var(--colorSecondary);
+  border: none;
+  outline: none; 
+  border-radius: .5rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.formulario textarea{
+  background: var(--backgroundPrimary);
+  color: var(--colorSecondary);
+  border: none;
+  border-radius: .5rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.formulario button{
+  background: var(--backgroundPrimary);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+  color: var(--colorSecondary);
 }
