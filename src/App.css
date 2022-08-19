@@ -222,3 +222,16 @@ form button{
   width: 100px;
   color: var(--colorSecondary);
 }
+
+.cardHab{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.divHabi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
