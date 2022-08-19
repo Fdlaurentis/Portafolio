@@ -186,3 +186,8 @@ i:hover{
   align-items: center;
   padding: 1rem;
 }
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+}

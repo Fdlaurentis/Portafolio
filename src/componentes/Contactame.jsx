@@ -2,18 +2,17 @@ import React from 'react';
 
 const Contactame = () => {
     return (
-        <div>
-            <div className="divBlock" id='contactame' style={{ marginBottom: '3in' }}>
-                <h4>Contactame</h4>
-                <div className="formulario">
-                    <form>
-                        <label htmlFor="email">Email de contacto</label>
-                        <input type="email" id='email' />
-                        <label htmlFor="empresa">Nombre de la empresa</label>
-                        <input type="text" id='empresa' />
-                    </form>
-                </div>
-            </div>
+        <div className='divBlock'>
+            <h1>Contactame</h1>
+            <form className='formulario' name='form-Contact' netlify>
+                <label htmlFor="nameEmpresa">Nombre de la Empresa</label>
+                <input type="text" id="nameEmpresa" />
+                <label htmlFor="nameEmpresa">Email de Empresa</label>
+                <input type="email" id="nameEmpresa" />
+                <label htmlFor="descEmpresa">Descripción del cargo</label>
+                <textarea id="descEmpresa" cols="30" rows="20" style={{height:'150px'}}></textarea>
+                <button>Enviar</button>
+            </form>
         </div>
     );
 };
