@@ -4,7 +4,7 @@ const Contactame = () => {
     return (
         <div className='divBlock'>
             <h1>Contactame</h1>
-            <form className='formulario' name='form-Contact'  method="POST" data-netlify="true">
+            <form className='formulario' name='contact'  method="POST" data-netlify="true">
                 <label htmlFor="nameEmpresa">Nombre de la Empresa</label>
                 <input type="text" id="nameEmpresa" name='nameEmpresa'/>
                 <label htmlFor="emailEmpresa">Email de Empresa</label>
