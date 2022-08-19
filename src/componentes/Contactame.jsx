@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contactame = () => {
     return (
-        <div className='divBlock'>
+        <div className='container'>
             <h1>Contactame</h1>
             <form name="contact" netlify>
                 <p>

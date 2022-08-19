@@ -9,9 +9,9 @@ import { Card } from 'react-bootstrap'
 const Habilidades = () => {
     return (
         <div className='container'>
+            <h1>Habilidates Tecnicas</h1>
             <div className="divHabi">
-                <h1>Habilidates Tecnicas</h1>
-                <Card style={{ background: '#04076d', width: '2in'}} className='cardHab'>
+                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
                     <Card.Img variant="top" src={react} style={{ width: '80px' }} />
                     <Card.Body>
                         <Card.Title style={{ textAlign: 'center' }}><h6>React</h6></Card.Title>
@@ -39,7 +39,29 @@ const Habilidades = () => {
                         <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
                         <div className="contCard">
                             <Card.Text style={{ color: '#f2d43e' }}>
-                            Atributos requerido Atributos opcionales Atributos globales
+                                Atributos requerido Atributos opcionales Atributos globales
+                            </Card.Text>
+                        </div>
+                    </Card.Body>
+                </Card>
+                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
+                    <Card.Img variant="top" src={css} style={{ width: '80px' }} />
+                    <Card.Body>
+                        <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
+                        <div className="contCard">
+                            <Card.Text style={{ color: '#f2d43e' }}>
+                                Atributos requerido Atributos opcionales Atributos globales
+                            </Card.Text>
+                        </div>
+                    </Card.Body>
+                </Card>
+                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
+                    <Card.Img variant="top" src={sql} style={{ width: '80px' }} />
+                    <Card.Body>
+                        <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
+                        <div className="contCard">
+                            <Card.Text style={{ color: '#f2d43e' }}>
+                                Desde consultas hasta estructura de BD
                             </Card.Text>
                         </div>
                     </Card.Body>
