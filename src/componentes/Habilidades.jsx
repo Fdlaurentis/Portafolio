@@ -58,7 +58,7 @@ const Habilidades = () => {
                 <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
                     <Card.Img variant="top" src={sql} style={{ width: '80px' }} />
                     <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
+                        <Card.Title style={{ textAlign: 'center' }}><h6>SQL</h6></Card.Title>
                         <div className="contCard">
                             <Card.Text style={{ color: '#f2d43e' }}>
                                 Desde consultas hasta estructura de BD
