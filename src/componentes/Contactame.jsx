@@ -8,10 +8,10 @@ const Contactame = () => {
   return (
     <div className="container">
       <h1>Contactame</h1>
-      <form action="https://formsubmit.co/9b00cc1265535c9bd393bc7d3378483d" method="POST">
+      <form action="https://formsubmit.co/fdlaurentis@gmail.com" method="POST">
         <div>
           <label>
-            Name <input type="text" name="name" />
+            Name <input type="text" name="name" /> 
           </label>
         </div>
         <div>
