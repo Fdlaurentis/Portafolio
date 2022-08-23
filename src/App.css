@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #fff;  
 }
 
 :root{
@@ -20,9 +20,9 @@ body {
       #3c2afc, #9587ff);
   background-size: 500%;
   animation: banimado 5s infinite;
-  overflow-y: scroll;
-  min-height: 100vh;
+  height: 98.5vh;
   width: 100%;
+  
 }
 
 @keyframes banimado {
@@ -251,8 +251,9 @@ form button{
     }
 
     .navBar{
+      position: absolute;
       top: 0;
-      bottom: 90%;
+      height: 60px;
     }
 
     .navBar{
