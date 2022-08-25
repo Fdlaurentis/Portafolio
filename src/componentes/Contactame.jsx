@@ -6,12 +6,13 @@ import swal from "sweetalert";
 const Contactame = () => {
     const navigate=useNavigate()
 
-    const message=()=>{
+    const message=(e)=>{
+      e.preventDefault()
       swal({
         title:'Correo enviado',
         icon:'success'
       })
-      
+      navigate('/')
     }
 
   return (
@@ -43,7 +44,7 @@ const Contactame = () => {
           <input type="submit" value='Enviar'/>
         </div>         
         <input type="hidden" name='_captcha' value='false'/>
-        <input type="hidden" name='_next' value={'https://fdlaurentis.netlify.app'}/>
+        {/* <input type="hidden" name='_next' value={'https://fdlaurentis.netlify.app'}/> */}
       </form>
       
     </div>
