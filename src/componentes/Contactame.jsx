@@ -1,14 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 
 const Contactame = () => {
     const navigate=useNavigate()
 
+    const message=()=>{
+      swal({
+        title:'Correo enviado',
+        icon:'success'
+      })
+      
+    }
+
   return (
     <div className="container">
       <h1>Contactame</h1>
-      <form action="https://formsubmit.co/fdlaurentis@gmail.com" method="POST">
+      <form action="https://formsubmit.co/9b00cc1265535c9bd393bc7d3378483d" method="POST" onSubmit={message}>
         <div>
           <label>
             Name <input type="text" name="name" /> 
@@ -31,9 +40,10 @@ const Contactame = () => {
           ></textarea>
         </div>
         <div>
-          <input type="submit" value='Enviar' name='_next' onClick={()=>navigate('/')}/>
+          <input type="submit" value='Enviar'/>
         </div>         
         <input type="hidden" name='_captcha' value='false'/>
+        <input type="hidden" name='_next' value={'https://fdlaurentis.netlify.app'}/>
       </form>
       
     </div>
