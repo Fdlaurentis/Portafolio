@@ -1,40 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import configuraciones from '../images/configuraciones.png'
+import correo from '../images/correos-electronicos.png'
+import portafolio from '../images/portafolio.png'
+import home from '../images/home.png'
 
 const NavBar = () => {
     const navigate = useNavigate();
     return (
-        <div>
-            <nav className="navBar">
-                <div className="divNav">
-                    <i
-                        className="fa-solid fa-house"
-                        onClick={() => navigate("/")}
-                    ></i>
-                    <span className="spanNav">Home</span>
+        <div className="navBar">
+            <div className="barraTop"></div>
+            <div className="barraLateral"></div>
+            <div className="iconos">
+                <div className="imgIcono">
+                    <img src={ home } onClick={()=>navigate('/')}/>
                 </div>
-                <div className="divNav">
-                    <i
-                        className="fa-solid fa-screwdriver-wrench"
-                        onClick={() => navigate("/habilidades")}
-                    ></i>
-                    <span className="spanNav">Habilidades</span>
+                <div className="imgIcono">
+                    <img src={ configuraciones } onClick={()=>navigate('/habilidades')}/>
                 </div>
-                <div className="divNav">
-                    <i
-                        className="fa-solid fa-briefcase"
-                        onClick={() => navigate("/portafolio")}
-                    ></i>
-                    <span className="spanNav">Portafolio</span>
+                <div className="imgIcono">
+                    <img src={ portafolio } onClick={()=>navigate('/portafolio')}/>
                 </div>
-                <div className="divNav">
-                    <i
-                        className="fa-solid fa-id-card"
-                        onClick={() => navigate("/contacto")}
-                    ></i>
-                    <span className="spanNav">Contactame</span>
+                <div className="imgIcono">
+                    <img src={ correo } onClick={()=>navigate('/contacto')}/>
                 </div>
-            </nav>
+            </div>
         </div>
     );
 };

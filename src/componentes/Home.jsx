@@ -1,28 +1,43 @@
-import React from 'react';
-import fotoPerfil from '../images/foto.png'
-import pdf from '../pdf/CV-Desarrollador Junior.pdf'
+import React from "react";
+import fotoPerfil from "../images/foto.png";
+import github from "../images/github.png"
+import linkedin from "../images/linkedin.png"
+import folder from "../images/folder.png"
+import pdf from "../pdf/CV-Desarrollador Junior.pdf";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate()
     return (
-        <div className='container'>
-            <h1>Sobre Mi</h1>
-            <div className="home">
-                <div className='datosPersonales'>
-                    <img src={fotoPerfil} className='fotoPerfil' />
-                    <div>
-                        <h5>Fernando <br />De Laurentis</h5>
-                        <h6>Soy <span className='tipeo'>Desarrollador .</span></h6>
-                        <div className='botones'>
-                            <a href="https://github.com/Fdlaurentis" target='_blank'><i className="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/fernando-de-laurentis-776867174/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
-                            <a href={pdf} download><i className="fa-solid fa-download"></i></a>
-                        </div>
+        <div className="home">
+            <span className="nameHome">Fernando De Laurentis</span>
+            <div style={{display:'flex', gap:'02rem'}}>
+                <h4><span className="tipeo">Desarrollador Jr.  </span></h4> 
+                <div className="homeFoto">
+                    <img src={fotoPerfil} className='fotoPe'/>
+                    <div className="icoContact">
+                        <a href="https://github.com/Fdlaurentis" target="_blank">
+                            <img src={github}/>
+                            <span className="tooltips">GitHub</span>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/fernando-de-laurentis-776867174/"
+                            target="_blank"
+                        >
+                            <img src={linkedin}/>
+                            <span className="tooltips">Linkedin</span>
+                        </a>
+                        <a href={pdf} download>
+                            <img src={folder}/>
+                            <span className="tooltips" style={{width:'90px'}}>Descargar CV</span>                            
+                        </a>
                     </div>
                 </div>
-                <span>
-                    Tengo 31 años de edad apasionado por el mundo de la programación, me encanta estar al día con las nuevas tecnologías que nos permiten desarrollar lo que imaginamos, en el 2016 me gradue como Lic. en Computación egresado de la prestigiosa Universidad del Zulia en Venezuela. Actualmente me desenpeño como Technical Operations Agent en Ecuador, a la par me encuentro realizando un Bootcamp en Academlo de Programación Web Full-Stack.
-                </span>
             </div>
+            <button className="acerca" onClick={()=>navigate('/acerca')}>
+                <span>Sobre mi <i className="fa-solid fa-arrow-right-long"></i></span>
+            </button>
         </div>
     );
 };

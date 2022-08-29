@@ -1,122 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;    
+  font-family: 'Fira Mono', monospace;
   color: #fff;  
 }
 
-:root{
-  --colorPrimary:#fff;
-  --colorSecondary: #f2d43e;
-  --backgroundPrimary: #04076d;
-}
-
-
-body {
-  background-image: linear-gradient(135deg, #12043f, #04076d, #0c1399, #122aa5,
-      #3c2afc, #9587ff);
-  background-size: 500%;
-  animation: banimado 5s infinite;
-  height: 98.5vh;
-  width: 100%;
-  
-}
-
-@keyframes banimado {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.navBar{
-  background: var(--backgroundPrimary);
-  border-radius: .5rem;
-  position: fixed; 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
-  display: flex;
-  justify-content: space-around;
-  min-height: 50px;
-  z-index: 5000;  
-}
-
-i:hover{
-  color:var(--colorSecondary);
-  cursor:pointer;  
-}
-
-.divNav{
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.spanNav{
+.imgBg{
   position: absolute;
-  bottom:35px;
-  display: none;
-  font-weight: bolder;
-  color: var(--colorSecondary);
-
-}
-
-.divNav:hover .spanNav{
-  display: block;
-}
-
-.datosPersonales{
-  display: flex;  
-  gap: 1rem;
-  align-items: center;
-  background: var(--backgroundPrimary);  
-  border-radius: 1rem;
-  padding: 1rem;
+  right: 0;
+  opacity: .1;
+  width: 500px;
   
 }
 
-.botones{
+.titulo{
+  color: #fff;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+.App{
+  background:#020912;;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  
+  height: 100vh;
 }
 
-.fotoPerfil{
-  width: 100px;  
-  height: 100px;
-  border-radius: 50%;
-  background:rgba(255, 255, 255, 0.61);
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.nameHome{
+  font-size: 80px;
+  font-weight:lighter;  
 }
 
 .tipeo{
-  color: var(--colorSecondary);
   position: relative;
-} 
+  font-size: 30px;
+}
 
 .tipeo::after{
   content: '';
   position: absolute;
   right: 0;
-  height: 100%;
+  height: 100%;  
   white-space: nowrap;
   border-left: 4px solid;
   overflow: hidden;
   animation: typing 3s infinite alternate steps(13);  
   overflow: hidden;
-  background: var(--backgroundPrimary);
+  background: #020912;
 }
 
 @keyframes typing {
@@ -124,201 +66,364 @@ i:hover{
   to{width: 0;}
 }
 
-
-.divBlock{
-  text-align: center;
-  margin: 1rem;
-}
-
-.divBlock span{
-  font-size: 12px;
-  
-}
-
-.divBlock img{
-  width: 100px;
-  height: 150px;
-  border-radius: .5rem;
-}
-
-.haTec img{
-  width: 45px;
-  height: 45px;
-}
-
-.haTec{
+.homeFoto{
+  background: #fff;  
+  width: 270px;  
+  padding: 10px;  
   display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  gap: .5rem;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin-bottom: 1in;
-  flex-wrap: wrap;
   gap: .5rem;
-  align-items: center;
+  border-radius: 10px;
 }
 
-.container h1{
-  color: var(--colorSecondary);
+.fotoPe{  
+  width: 250px;
+  background: #fff;  
 }
 
-.container span{
-  text-align: justify;
-}
-
-.imgtec img{
-  width: 45px;
-  height: 45px;
-  
-}
-
-.imgtec{
+.icoContact{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
+  font-size: 30px;
+  background: #fff;
 }
 
-.btn-contact{
-  width: 200px;
+.icoContact img{
+  width: 30px;
 }
 
-.card:hover{
+a{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltips{
+  background: lightgray;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  position: absolute; 
+  top: 50px;
+  display: none;
+  color: #020912;
+}
+
+a:hover .tooltips{
+  display: block;
+}
+
+.acerca{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #d3d3d3;
+  position: absolute;
+  right: 1.7in;
+  bottom: 1.5rem;
+}
+
+.acerca span{
+  color: #020912;
+  font-weight: bold;
+}
+
+.acerca i{
+  color: #020912;
+}
+
+.acerca:hover{
+  background: transparent;
+  border: 2px solid #b5dcc9;
+}
+
+.acerca:hover span{
+  color: #fff;
+}
+
+.acerca:hover i{
+  color: #fff;
+}
+
+.navBar{
+  position: fixed;
+  top: 2in;
+  width: 1in;
+  height: 300px;
+  background: #d3d3d3 ;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  box-shadow: 0 1px 1px 5px #b5dcc9;
+}
+
+.barraTop{
+  background: #545454;
+  width: 100px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -20px;  
+}
+
+.barraLateral{
+  background: #545454;
+  width: 10px;
+  height: 260px;
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1.5rem;
+  margin: 2rem 1rem;
+}
+
+.imgIcono img{
+  width: 40px;
+}
+
+.imgIcono img:hover{
+  width: 60px;
   cursor: pointer;
 }
 
-.contCard{
- display: none; 
- position: absolute; 
- background: #04086d94; 
+.cuerpo{
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
-.card:hover .contCard{  
-  top: 0;  
-  border-radius: 0.375rem;
+.cuerpo span{
+  font-size: 50px;
+  color: #7ce6b3;
+}
+
+.cuerpo p{
+  text-align: justify;
+}
+
+.estudios{
+  display: flex;
+  gap: 2rem;
+}
+
+.estudios div{
+  margin-top: 12px;
+}
+
+.divHab{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+
+}
+
+.bgIco{  
+  position: relative;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  background:#07dd764b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.textHabPfirt{
+  position: absolute;
+  width: 400px;
+  top: -1.7in;
+  left: 3in;
+  display: none;
+}
+
+.textHabPsecu{
+  position: absolute;
+  width: 400px;
+  top: -1.7in;
+  left: 1.1in;
+  display: none;
+}
+
+.textHabPter{
+  position: absolute;
+  width: 500px;
+  top: -1.7in;
+  left: -.73in;
+  display: none;
+}
+
+.textHabPfour{
+  position: absolute;
+  width: 500px;
+  top: -1.7in;
+  left: -2.56in;
+  display: none;
+}
+
+.textHabPfive{
+  position: absolute;
+  width: 500px;
+  top: -1.7in;
+  left: -4.4in;
+  display: none;
+}
+
+
+.bgIco:hover .textHabPfirt{
+  display: block;
+}
+
+.bgIco:hover .textHabPsecu{
+  display: block;
+}
+
+.bgIco:hover .textHabPter{
+  display: block;
+}
+
+.bgIco:hover .textHabPfour{
+  display: block;
+}
+
+.bgIco:hover .textHabPfive{
+  display: block;
+}
+
+.divIcono{
+  display: flex;    
+  margin-left: 1.2in;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  
+}
+
+.divIcono img{
+  width: 90px;
+  height: 90px;
+
+}
+
+.cardItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.cardItems a{
+  text-decoration: none;
+}
+
+.cardItem{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.cardItem .titCard{
+  font-size: 25px;
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 232px;
+  text-align: center;    
+}
+
+.titCard:hover{
+  color: #fff;
+  background: #7ce6b3;
+}
+
+.cardItem img{
   width: 100%;
-  height: 100%;
-  left: 0;
+  height: 350px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;  
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.bgDesarrollo{ 
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(#98e6c0af, #2fe68dad);
+  bottom: 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.bgDesarrollo p{
+  font-size: 12px;
+  padding: 10px;  
+  color: #020912;
+  font-weight: bold;
+}
+
+.formContac{
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1rem;
 }
 
 form{
   display: flex;
   flex-direction: column;
-  gap: .5rem;    
-  padding: 1rem;
-  background-color: #9587ff9f;
-  border-radius: 1rem;
+  gap: .2rem;
+  background: #d6dbe1;
+  border: 7px solid #98e6c0af;
+  width: 400px;
+  border-radius: 10px;
+  align-items: center;
+  height: 380px;
+  padding: 10px 0;
+  position: relative;  
+  margin-top: 4rem;
+}
+
+form div{
+  width: 275px;
 }
 
 form input{
-  background: var(--backgroundPrimary);
-  color: var(--colorSecondary);
-  border: none;
-  outline: none; 
-  border-radius: .5rem;
-  padding: 10px;
-  width: 100%;
+  width: 275px;  
+  height: 35px;
+  border-radius: 10px;  
 }
 
 form textarea{
-  background: var(--backgroundPrimary);
-  color: var(--colorSecondary);
-  border: none;
-  border-radius: .5rem;
-  padding: 10px;
-  width: 100%;
+  width: 275px;  
+  min-height: 150px;
+  border-radius: 10px;  
 }
 
-form button{
-  background: var(--backgroundPrimary);
-  border: none;
-  padding: 5px;
-  border-radius: 10px;
+form label{
+  color: #020912;
+  font-weight: bold;
+}
+
+.btnForm{
+  background: #28597a;
   width: 100px;
-  color: var(--colorSecondary);
-}
-
-.cardHab{
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.divHabi{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.home{
-  display: flex;
-  flex-direction: column;
-  padding: 0 .5rem;
-  gap: 1rem;
-}
-
-@media screen and (min-width:550px) {
-    .divHabi{
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .navBar{
-      position: absolute; 
-      top: 0;
-      height: 60px;      
-    }
-
-    .navBar{
-      font-size: 35px;
-    }
-
-    .spanNav{
-      position: absolute;
-      top:35px;
-      display: none;
-      font-weight: bolder;
-      color: var(--colorSecondary);
-    }
-
-    .container{
-      margin-bottom: 0;
-      margin-top: .8in;
-    }
-
-    .home{
-      align-items: center;
-    }
-
-    .datosPersonales{
-      width: 550px;
-    }
-
-    .datosPersonales img{
-      width:200px;
-      height: 200px;
-    }
-
-    .datosPersonales h5{
-      font-size: 25px;
-    }
-    .datosPersonales h6{
-      font-size: 25px;
-    }
-
-    .datosPersonales i{
-      font-size: 25px;
-    }
-    
-   
+  padding: 4px 0;
+  position: absolute;
+  bottom: 10px;
+  right: 4rem;
 }

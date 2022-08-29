@@ -1,71 +1,78 @@
-import React from 'react';
-import css from '../images/css-3.png'
-import html from '../images/html-5.png'
-import js from '../images/js.png'
-import sql from '../images/servidor-sql.png'
-import react from '../images/structure.png'
-import { Card } from 'react-bootstrap'
+import React from "react";
+import css from "../images/css-3.png";
+import html from "../images/html-5.png";
+import js from "../images/archivo-js.png";
+import sql from "../images/servidor-sql.png";
+import react from "../images/structure.png";
 
 const Habilidades = () => {
     return (
-        <div className='container'>
-            <h1>Habilidates Tecnicas</h1>
-            <div className="divHabi">
-                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
-                    <Card.Img variant="top" src={react} style={{ width: '80px' }} />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>React</h6></Card.Title>
-                        <div className="contCard">
-                            <Card.Text style={{ color: '#f2d43e' }}>
-                                Redux Axios Hook-DOM Componentes
-                            </Card.Text>
-                        </div>
-                    </Card.Body>
-                </Card>
-                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
-                    <Card.Img variant="top" src={js} style={{ width: '80px' }} />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>JavaScritp</h6></Card.Title>
-                        <div className="contCard">
-                            <Card.Text style={{ color: '#f2d43e' }}>
-                                Closures Destructuring sintaxis extendida Parámetros rest Callback Functions Promesas Async Await
-                            </Card.Text>
-                        </div>
-                    </Card.Body>
-                </Card>
-                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
-                    <Card.Img variant="top" src={html} style={{ width: '80px' }} />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
-                        <div className="contCard">
-                            <Card.Text style={{ color: '#f2d43e' }}>
-                                Atributos requerido Atributos opcionales Atributos globales
-                            </Card.Text>
-                        </div>
-                    </Card.Body>
-                </Card>
-                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
-                    <Card.Img variant="top" src={css} style={{ width: '80px' }} />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>HTML</h6></Card.Title>
-                        <div className="contCard">
-                            <Card.Text style={{ color: '#f2d43e' }}>
-                                Atributos requerido Atributos opcionales Atributos globales
-                            </Card.Text>
-                        </div>
-                    </Card.Body>
-                </Card>
-                <Card style={{ background: '#04076d', width: '2in' }} className='cardHab'>
-                    <Card.Img variant="top" src={sql} style={{ width: '80px' }} />
-                    <Card.Body>
-                        <Card.Title style={{ textAlign: 'center' }}><h6>SQL</h6></Card.Title>
-                        <div className="contCard">
-                            <Card.Text style={{ color: '#f2d43e' }}>
-                                Desde consultas hasta estructura de BD
-                            </Card.Text>
-                        </div>
-                    </Card.Body>
-                </Card>
+        <div className="cuerpo">
+            <p className="titulo">Formación</p>
+            <div className="estudios">
+                <span>Educación</span>
+                <div>
+                    <p>Licenciatura en Computación (2016)</p>
+                    <p>Web Full Stack (Actualmente)</p>
+                </div>
+            </div>
+            <div className="divHab">
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        marginLeft: "4rem",
+                    }}
+                >
+                    <span>Habilidades </span>
+                    <span>Técnicas</span>
+                </div>
+                <div className="divIcono">
+                    <div className="bgIco">
+                        <img src={react} className="react" />
+                        <p className="textHabPfirt">
+                            React es una biblioteca Javascript de código abierto
+                            diseñada para crear interfaces de usuario con el
+                            objetivo de facilitar el desarrollo de aplicaciones
+                            en una sola página
+                        </p>
+                    </div>
+                    <div className="bgIco">
+                        <img src={js} />
+                        <p className="textHabPsecu">
+                            JavaScript (abreviado comúnmente JS) es un lenguaje
+                            de programación interpretado, dialecto del estándar
+                            ECMAScript. Se define como orientado a objetos,2​
+                            basado en prototipos, imperativo, débilmente tipado
+                            y dinámico.
+                        </p>
+                    </div>
+                    <div className="bgIco">
+                        <img
+                            src={html}
+                            style={{ height: "70px", width: "70px" }}
+                        />
+                        <p className="textHabPter">
+                        HTML es el lenguaje con el que se define el contenido de las páginas web. Básicamente se trata de un conjunto de etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas, vídeos, etc.
+                        </p>
+                    </div>
+                    <div className="bgIco">
+                        <img
+                            src={css}
+                            style={{ height: "70px", width: "70px" }}
+                        />
+                        <p className="textHabPfour">
+                        CSS son las siglas en inglés de Cascading Style Sheets, que significa «hojas de esilo en cascada». Es un lenguaje que se usa para estilizar elementos escritos en un lenguaje de marcado como HTML. 
+                        </p>
+                    </div>
+                    <div className="bgIco">
+                        <img src={sql} />
+                        <p className="textHabPfive">
+                        SQL es un acrónimo en inglés para Structured Query Language.  Un Lenguaje de Consulta Estructurado. Un tipo de lenguaje de programación que te permite manipular y descargar datos de una base de datos. Tiene capacidad de hacer cálculos avanzados y álgebra.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );
