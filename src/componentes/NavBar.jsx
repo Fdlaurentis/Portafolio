@@ -14,15 +14,19 @@ const NavBar = () => {
             <div className="iconos">
                 <div className="imgIcono">
                     <img src={ home } onClick={()=>navigate('/')}/>
+                    <span className="tooltip">Home</span>
                 </div>
                 <div className="imgIcono">
                     <img src={ configuraciones } onClick={()=>navigate('/habilidades')}/>
+                    <span className="tooltip">Habilidades</span>
                 </div>
                 <div className="imgIcono">
                     <img src={ portafolio } onClick={()=>navigate('/portafolio')}/>
+                    <span className="tooltip">Portafolio</span>
                 </div>
                 <div className="imgIcono">
                     <img src={ correo } onClick={()=>navigate('/contacto')}/>
+                    <span className="tooltip">Contactame</span>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ import pokeApi from "../images/pokeApi.png";
 
 const Portafolio = () => {
     return (
-        <div className="cuerpo">
+        <div className="portafolio">
             <p className="titulo">Portafolio</p>
             <div className="cardItems">
                 <a

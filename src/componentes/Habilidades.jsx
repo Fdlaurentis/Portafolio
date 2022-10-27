@@ -12,8 +12,8 @@ const Habilidades = () => {
             <div className="estudios">
                 <span>Educación</span>
                 <div>
-                    <p>Licenciatura en Computación (2016)</p>
-                    <p>Web Full Stack (Actualmente)</p>
+                    <p>Licenciatura en Computación - Universidad del Zulia(2016)</p>
+                    <p>Web Full Stack - Academlo (2022) </p>
                 </div>
             </div>
             <div className="divHab">
