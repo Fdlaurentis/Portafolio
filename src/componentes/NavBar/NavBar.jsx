@@ -10,8 +10,8 @@ const NavBar = () => {
     const navigate = useNavigate()
     return (
         <div className={style.NavBar}>
-            <img src={home} onClick = { ()=> navigate('/') }/>
-            <img src={stack} />
+            <img src={home} onClick = { () => navigate('/') }/>
+            <img src={stack} onClick = { () => navigate('/stack') }/>
             <img src={portafolio} />
             <img src={email} />
         </div>

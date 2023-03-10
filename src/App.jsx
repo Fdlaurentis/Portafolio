@@ -1,5 +1,5 @@
 import './App.css'
-import { About, Home } from './page'
+import { About, Home, Stack } from './page'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import NavBar from './componentes/NavBar/NavBar'
 import { useState } from 'react'
@@ -11,32 +11,47 @@ function App() {
   return (
     <div className={`App ${theme ? 'themeDark' : 'themeLigth'}`}>
       <div className='themeCont'>
-        <span>
-          Dark <i className="fa-regular fa-moon"></i>
+        <span style={{ fontWeight: 'bold', fontSize: '25px' }}>
+          Tema
         </span>
         <div
           className='theme'
           style={{
             background: theme ? '#020912' : '#ffffff',
-            border: theme ? '1px solid #ffffff' : '1px solid #020912'
+            border: theme ? '1px solid #ffffff' : '1px solid #52bd89'
           }}
           onClick={() => setTheme(!theme)}
         >
           <div
-            style={{ background: theme ? '#ffffff' : '#020912' }}
+            style={{
+              background: theme ? '#ffffff' : '#52bd89',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
             onClick={() => setTheme(!theme)}
             className={`${theme ? 'sliceLeft' : 'sliceRigth'}`}
-          ></div>
+          >
+            {
+              theme
+                ? <i
+                  className="fa-regular fa-moon"
+                  style={{ color: '#020912' }}
+                ></i>
+                : <i
+                  className="fa-solid fa-sun"
+                  style={{ color: '#ffffff' }}
+                ></i>
+            }
+          </div>
         </div>
-        <span>
-          Ligth <i className="fa-solid fa-sun"></i>
-        </span>
       </div>
       <HashRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home theme={theme} />} />
           <Route path='/about' element={<About />} />
+          <Route path='/stack' element={<Stack theme={theme} />} />
         </Routes>
       </HashRouter>
     </div>
