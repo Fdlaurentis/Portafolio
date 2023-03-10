@@ -1,0 +1,18 @@
+.NavBar{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #D9D9D9;
+    padding: 15px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px; 
+    border: 1px solid #020912;   
+}
+
+.NavBar > img {
+    width: 40px;
+    cursor: pointer;
+}
