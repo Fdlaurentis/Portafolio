@@ -12,8 +12,8 @@ const NavBar = () => {
         <div className={style.NavBar}>
             <img src={home} onClick = { () => navigate('/') }/>
             <img src={stack} onClick = { () => navigate('/stack') }/>
-            <img src={portafolio} />
-            <img src={email} />
+            <img src={portafolio} onClick = { () => navigate('/portfolio') }/>
+            <img src={email} onClick = { () => navigate('/contact') }/>
         </div>
     )
 }

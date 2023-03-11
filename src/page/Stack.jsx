@@ -18,6 +18,17 @@ const Stack = ( {theme} ) => {
                 <i className="fa-brands fa-html5"></i>
                 <i className="fa-brands fa-css3-alt"></i>
             </div>
+            <div
+                className="container"
+                style={{
+                    background: theme ? '#ffffff' : '#52bd89'
+                }}
+            >
+                <span style={{ fontWeight: 'bloder' }}>
+                    sorry I'm working on an update
+                </span>
+                <i class="fa-solid fa-person-digging" style={{fontSize: '30px'}}></i>
+            </div>
         </div>
     )
 }

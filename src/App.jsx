@@ -1,5 +1,5 @@
 import './App.css'
-import { About, Home, Stack } from './page'
+import { About, Contact, Home, Portfolio, Stack } from './page'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import NavBar from './componentes/NavBar/NavBar'
 import { useState } from 'react'
@@ -52,6 +52,8 @@ function App() {
           <Route path='/' element={<Home theme={theme} />} />
           <Route path='/about' element={<About />} />
           <Route path='/stack' element={<Stack theme={theme} />} />
+          <Route path='/portfolio' element={<Portfolio theme={theme} />} />
+          <Route path='/contact' element={<Contact theme={theme} />} />
         </Routes>
       </HashRouter>
     </div>
