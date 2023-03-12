@@ -27,7 +27,7 @@ const Stack = ( {theme} ) => {
                 <span style={{ fontWeight: 'bloder' }}>
                     sorry I'm working on an update
                 </span>
-                <i class="fa-solid fa-person-digging" style={{fontSize: '30px'}}></i>
+                <i className="fa-solid fa-person-digging" style={{fontSize: '30px'}}></i>
             </div>
         </div>
     )

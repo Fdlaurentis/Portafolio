@@ -1,16 +1,25 @@
-const About = () => {
+const About = ({ theme, language }) => {
     return (
         <div className="main">
-            <h1>Sobre mi</h1>
-            <p style={{ textAlign: 'center' }}>
-                Apasionado por el mundo de la programación, me encanta estar al día con las nuevas tecnologías que nos permiten desarrollar lo que imaginamos.
-
+            <h1>{language.Page[1]}</h1>
+            <p style={{
+                textAlign: 'center',
+                lineHeight:'30px'
+            }}>
+                {language.AboutMe}
             </p>
-            <h1>Formación</h1>
-            <ul style={{display:'flex', flexDirection:'column', gap:'2rem'}}>
-                <li>Lic. en Computación  Universidad del Zulia(2016)</li>
-                <li>Web Full Stack - Academlo (2022)</li>
-                <li>PHP 8, MYSQL,  Bootstrap - Udemy 2021</li>
+            <h1>{language.Page[2]}</h1>
+            <ul style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                gap: '2rem',
+                padding:'0 35px'
+                }} >
+                {
+                    language.Trainings.map((training, index) => (
+                        <li key={index}>{training}</li>
+                    ))
+                }
             </ul>
         </div>
     )

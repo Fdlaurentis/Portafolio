@@ -1,0 +1,19 @@
+{
+    "name": "Fernando De Laurentis",
+    "title": "Desarrollador",
+    "field": "Fron-End",
+    "AboutMe": "Apasionado del mundo de la programación, me encanta estar al día con las nuevas tecnologías que nos permitan desarrollar lo que imaginamos, abierto a aprender nuevos retos, ya que tengo la cualidad de aprender rápido.",
+    "Page": [
+        "Tema",
+        "Sobre mi",
+        "Formación",
+        "Habilidades tecnicas",
+        "Portafolio",
+        "Contactame"
+    ],
+    "Trainings": [
+        "Lic. en Computación  Universidad del Zulia(2016)",
+        "Web Full Stack - Academlo (2022)",
+        "PHP 8, MYSQL,  Bootstrap - Udemy 2021"
+    ]
+}

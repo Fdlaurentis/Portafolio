@@ -21,16 +21,21 @@
   background: #ffffff;
 }
 
+.settings{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
 .themeCont {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 15px;
 }
 
 .theme {
-  width: 100px;
-  padding: 5px;
+  width: 80px;
+  padding: 2px;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -50,8 +55,30 @@
 }
 
 .sliceRigth {
-  transform: translate(60px);
+  transform: translate(40px);
   transition: 0.7s;  
+}
+
+.language{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language > .contLanguage{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.language .contLanguage.activo{
+  border-radius: '5px';
+  padding: '4px';
+}
+
+.language > .contLanguage >img{
+  width: 30px;
 }
 
 .main {
