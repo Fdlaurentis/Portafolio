@@ -1,19 +1,29 @@
-const Contact = ( {theme} ) => {
-
+const Contact = ({ theme, language }) => {
+    
     return (
         <div className="main">
-            <h1>Contacto</h1>
-            <div
+            <h1>{language.Page[5]}</h1>
+            <div className="icons">
+                {
+                    language.Icons.map((icon, index) => (
+                        <i className={icon} key={index}></i>
+                    ))
+                }                
+            </div>
+            <form
                 className="container"
                 style={{
                     background: theme ? '#ffffff' : '#52bd89'
                 }}
             >
-                <span style={{ fontWeight: 'bloder' }}>
-                    sorry I'm working on an update
-                </span>
-                <i class="fa-solid fa-person-digging"></i>
-            </div>
+
+                <input type="text" />
+                <input type="text" />
+                <textarea>
+
+                </textarea>
+                <button>Enviar</button>
+            </form>
         </div>
     )
 }

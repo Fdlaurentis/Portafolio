@@ -9,11 +9,13 @@ const NavBar = () => {
 
     const navigate = useNavigate()
     return (
-        <div className={style.NavBar}>
-            <img src={home} onClick = { () => navigate('/') }/>
-            <img src={stack} onClick = { () => navigate('/stack') }/>
-            <img src={portafolio} onClick = { () => navigate('/portfolio') }/>
-            <img src={email} onClick = { () => navigate('/contact') }/>
+        <div
+            className={style.NavBar}
+        >
+            <img src={home} onClick={() => navigate('/')} />
+            <img src={stack} onClick={() => navigate('/stack')} />
+            <img src={portafolio} onClick={() => navigate('/portfolio')} />
+            <img src={email} onClick={() => navigate('/contact')} />
         </div>
     )
 }

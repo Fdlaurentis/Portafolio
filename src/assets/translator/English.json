@@ -15,5 +15,36 @@
         "Lic. en Computación  Universidad del Zulia(2016)",
         "Web Full Stack - Academlo (2022)",
         "PHP 8, MYSQL,  Bootstrap - Udemy 2021"
+    ],
+    "Stacks": [
+        {
+            "icon": "fa-brands fa-react",
+            "name": "React"
+        },
+        {
+            "icon": "fa-brands fa-aws",
+            "name": "Aws"
+        },
+        {
+            "icon": "fa-brands fa-square-js",
+            "name": "JavaScript"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "name": "GitHub"
+        },
+        {
+            "icon": "fa-brands fa-html5",
+            "name": "HTML:5"
+        },
+        {
+            "icon": "fa-brands fa-css3-alt",
+            "name": "CSS3"
+        }
+    ],
+    "Icons":[
+        "fa-brands fa-github",
+        "fa-brands fa-linkedin",
+        "fa-solid fa-file-arrow-down"
     ]
 }
