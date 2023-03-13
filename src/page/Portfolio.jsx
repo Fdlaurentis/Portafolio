@@ -1,3 +1,5 @@
+import Cards from "../componentes/Cards/Cards"
+
 const Portfolio = ({ theme, language }) => {
 
     return (
@@ -9,10 +11,7 @@ const Portfolio = ({ theme, language }) => {
                     background: theme ? '#ffffff' : '#52bd89'
                 }}
             >
-                <span style={{ fontWeight: 'bloder', textAlign:'center', marginTop:'20px' }}>
-                    sorry I'm working on an update
-                </span>
-                <i className="fa-solid fa-person-digging"></i>
+                <Cards theme={theme} />
             </div>
         </div>
     )

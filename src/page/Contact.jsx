@@ -1,3 +1,5 @@
+import Cards from "../componentes/Cards/Cards"
+
 const Contact = ({ theme, language }) => {
     
     return (
@@ -13,7 +15,8 @@ const Contact = ({ theme, language }) => {
             <form
                 className="container"
                 style={{
-                    background: theme ? '#ffffff' : '#52bd89'
+                    background: theme ? '#ffffff' : '#52bd89',
+                    padding:'30px'
                 }}
             >
 
@@ -24,6 +27,7 @@ const Contact = ({ theme, language }) => {
                 </textarea>
                 <button>Enviar</button>
             </form>
+            <Cards theme={theme} />
         </div>
     )
 }
