@@ -1,13 +1,11 @@
 import foto from '../assets/images/foto.png'
-import github from '../assets/images/github.png'
-import linkedin from '../assets/images/linkedin.png'
-import folder from '../assets/images/folder.png'
 import { useNavigate } from 'react-router-dom'
 
 const Home = ({ theme, language }) => {
 
     const navigate = useNavigate()
     return (
+        <div className="home">
         <div className="main">
             <h2>Fernando De Laurentis</h2>
             <h1>{language.title}</h1>
@@ -38,6 +36,7 @@ const Home = ({ theme, language }) => {
                 <span>{language.Page[1]}</span>
                 <i className="fa-solid fa-arrow-right"></i>
             </div>
+        </div>   
         </div>
     )
 }

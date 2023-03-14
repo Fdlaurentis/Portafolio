@@ -16,3 +16,17 @@
     width: 40px;
     cursor: pointer;
 }
+
+@media (min-width: 600px) {
+
+    .NavBar{
+        flex-direction: column;
+        left: 0;        
+        width: 75px;
+        height: 400px;
+        top: calc((100vh - 400px) / 2);
+        border-top-right-radius: 40px;
+        border-Bottom-right-radius: 40px; 
+        border-top-left-radius: 0; 
+    }        
+}

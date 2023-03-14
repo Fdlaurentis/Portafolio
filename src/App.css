@@ -86,7 +86,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: .3in;
+  margin: .3in 0;
   padding: 0 30px;
 }
 
@@ -195,4 +195,10 @@
   width: 250px;
   height: 250px;
   margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .main{
+    margin: 0;
+  }
 }

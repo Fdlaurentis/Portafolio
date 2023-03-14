@@ -1,5 +1,5 @@
 import './App.css'
-import { About, Contact, Home, Portfolio, Stack } from './page'
+import {About, Contact, Home, Portfolio, Stack } from './page'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import NavBar from './componentes/NavBar/NavBar'
 import { useState } from 'react'
@@ -54,7 +54,7 @@ function App() {
         </div>
         <div className="language">
           <div
-            className= 'contLanguage'
+            className='contLanguage'
             style={{
               background: language && '#52bd89',
               borderRadius: '5px',
