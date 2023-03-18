@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Home = ({ theme, language }) => {
 
     const navigate = useNavigate()
-    return (
-        <div className="home">
+    return (        
         <div className="main">
             <h2>Fernando De Laurentis</h2>
             <h1>{language.title}</h1>
@@ -23,7 +22,7 @@ const Home = ({ theme, language }) => {
                 <div className="icons">
                     {
                         language.Icons.map((icon, index) => (
-                            <i className={icon} key={index}></i>
+                            <a href={icon.url} target="_blank" key={index}><i className={icon.icon}></i></a>
                         ))
                     }
                 </div>
@@ -36,8 +35,7 @@ const Home = ({ theme, language }) => {
                 <span>{language.Page[1]}</span>
                 <i className="fa-solid fa-arrow-right"></i>
             </div>
-        </div>   
-        </div>
+        </div>           
     )
 }
 export default Home

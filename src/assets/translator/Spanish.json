@@ -40,11 +40,28 @@
         {
             "icon": "fa-brands fa-css3-alt",
             "name": "CSS3"
+        },
+        {
+            "icon": "fa-solid fa-database",
+            "name": "SQL"
+        },
+        {
+            "icon": "fa-brands fa-bootstrap",
+            "name": "Bootstrap"
         }
     ],
-    "Icons":[
-        "fa-brands fa-github",
-        "fa-brands fa-linkedin",
-        "fa-solid fa-file-arrow-down"
+    "Icons": [
+        {
+            "icon": "fa-brands fa-github",
+            "url": "https://github.com/Fdlaurentis"
+        },
+        {
+            "icon": "fa-brands fa-linkedin",
+            "url": "https://www.linkedin.com/in/fernando-de-laurentis/"
+        },
+        {
+            "icon": "fa-solid fa-file-arrow-down",
+            "url": "https://drive.google.com/file/d/1DyoeHGZZ0jNDCi_hlxrNP7F8MSB4IpVR/view?usp=share_link"
+        }
     ]
 }

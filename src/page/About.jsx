@@ -2,10 +2,7 @@ const About = ({ theme, language }) => {
     return (
         <div className="main">
             <h1>{language.Page[1]}</h1>
-            <p style={{
-                textAlign: 'center',
-                lineHeight:'30px'
-            }}>
+            <p>
                 {language.AboutMe}
             </p>
             <h1>{language.Page[2]}</h1>
