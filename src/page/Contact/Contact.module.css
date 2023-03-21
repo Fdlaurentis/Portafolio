@@ -1,0 +1,47 @@
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    min-width: 186px;
+    max-width: 186px;
+    cursor: pointer;
+    border: 1px solid #020912;
+}
+
+.input > input {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #020912;
+}
+
+.input > textarea {
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    cursor: pointer;
+}
+
+.input > .span {
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.7s;
+    pointer-events: none;
+}
+
+.input > .textInput:focus ~ .span {
+    top: -2px;
+    font-size: 15px;
+}
