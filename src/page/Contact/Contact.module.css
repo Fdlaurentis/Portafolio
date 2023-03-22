@@ -35,13 +35,22 @@
     font-size: 20px;
     position: absolute;
     left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20px;
+    transform: translateY(-10px);
     transition: 0.7s;
     pointer-events: none;
 }
 
 .input > .textInput:focus ~ .span {
-    top: -2px;
+    top: 0;
     font-size: 15px;
+}
+
+.spanValited{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transform: translateY(-10px);
+    font-size: 15px;
+    pointer-events: none;
 }
