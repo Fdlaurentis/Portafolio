@@ -5,10 +5,11 @@
     border-radius: 10px;
     padding: 10px;
     position: relative;
-    min-width: 186px;
-    max-width: 186px;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 300px; /* Establece un máximo para evitar que se estire demasiado */
     cursor: pointer;
     border: 1px solid #020912;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .input > input {
@@ -17,6 +18,7 @@
     border: none;
     cursor: pointer;
     color: #020912;
+    width: 100%; /* Ajusta el ancho al contenedor */
 }
 
 .input > textarea {
@@ -24,33 +26,34 @@
     outline: none;
     border: none;
     resize: none;
-    min-width: 140px;
-    max-width: 140px;
-    min-height: 140px;
-    max-height: 140px;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    min-height: 100px; /* Altura mínima */
     cursor: pointer;
 }
 
 .input > .span {
-    font-size: 20px;
+    font-size: 1em; /* Usa unidades relativas */
     position: absolute;
     left: 10px;
-    top: 20px;
-    transform: translateY(-10px);
+    top: 50%;
+    transform: translateY(-50%);
     transition: 0.7s;
     pointer-events: none;
+    color: #020912;
 }
 
-.input > .textInput:focus ~ .span {
+.input > .textInput:focus ~ .span,
+.input > .textInput:not(:placeholder-shown) ~ .span {
     top: 0;
-    font-size: 15px;
+    font-size: 0.75em; /* Usa unidades relativas */
 }
 
-.spanValited{
+.spanValited {
     position: absolute;
     left: 10px;
     top: 0;
     transform: translateY(-10px);
-    font-size: 15px;
+    font-size: 0.75em; /* Usa unidades relativas */
     pointer-events: none;
+    color: #020912;
 }
